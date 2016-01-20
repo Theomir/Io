@@ -12,7 +12,7 @@ class Kontakt
 	string adres_biuro;
 	string telefon_biuro;
 	string telefon_kom;
-	string notatki;
+	string notatki ;
 public:
 	Kontakt()
 	{
