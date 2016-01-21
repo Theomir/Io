@@ -3,7 +3,7 @@
 #include <fstream>
 #include <string>
 using namespace std;
-void ksiazka_adresowa::czytajPlik(string nazwapliku)
+void ksiazka_adresowa::czytajPlik(string nazwapliku)  //wczytywanie ksiazki z pliku
 {
 	fstream ksiazka_adresowa_plik;
 	char str[4096];

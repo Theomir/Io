@@ -116,7 +116,7 @@ void Kalendarz::usun_wydarzenie()
 	kalendarz_wydarzen[nowy].usun_wydarzenie_z_listy();
 	pauza();
 }
-void Kalendarz::usun_wygasniete()
+void Kalendarz::usun_wygasniete() // usuwanie wydarzen ktore wygasly
 {
 	int n_usuniety = 0;
 	terminy dzisiaj;

@@ -7,7 +7,7 @@
 
 using namespace std;
 
-bool terminy::input_from_string(string str_data)
+bool terminy::input_from_string(string str_data) //wprowadzenie dnia slownie
 {
 	int d1 = str_data.find('-');
 	int d2 = str_data.find_last_of('-');
@@ -26,7 +26,7 @@ bool terminy::input_from_string(string str_data)
 	}
 	return format_daty();
 }
-void terminy::input(string tekst)
+void terminy::input(string tekst)  //wprowadzanie daty wydarzenia
 {
 	string bufor;
 	do
@@ -66,7 +66,7 @@ terminy terminy::operator ++(int)
 	}
 	return data;
 }
-bool terminy::format_daty()
+bool terminy::format_daty()  //obsluga niepelnej daty
 {
 	bool val;
 	if (rok < 100) rok += 2000;

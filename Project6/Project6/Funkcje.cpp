@@ -13,7 +13,7 @@ void pauza()
 	cout << ogranicznik;
 	system("pause");
 }
-int int_input(string tekst, int min, int max)
+int int_input(string tekst, int min, int max)  //konwersja ze stringa do inta
 {
 	char bufor[15];
 	int n;
@@ -59,7 +59,7 @@ void blad_wydruku(string error)
 	cout << "[ " << error << " ]\n";
 	pauza();
 }
-void wprowadzanie_i_kontrola(string pole, string & wartosc)
+void wprowadzanie_i_kontrola(string pole, string & wartosc) //obsluga nieprawidlowych znakow
 {
 	string temp;
 	bool poprawny = false;
@@ -78,7 +78,7 @@ void wprowadzanie_i_kontrola(string pole, string & wartosc)
 	}
 	wartosc = temp;
 }
-bool potwierdzenie(string tekst)
+bool potwierdzenie(string tekst)  //potwierdzenie zapisu/usuniecia
 {
 	char sn;
 	do
@@ -113,7 +113,7 @@ void pokaz_menu(int wydarzenia_dzis, int wydarzenia_jutro)
 	cout << "| 14 - Wyjscie bez zapisywania\n";
 	cout << ogranicznik;
 }
-string int_to_string(int n)
+string int_to_string(int n) //konwersja z inta do stringa
 {
 	string tmp, ret;
 	if (n < 0) {

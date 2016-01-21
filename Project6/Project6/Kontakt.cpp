@@ -7,7 +7,7 @@ Kontakt::Kontakt(string n, string c, string m, string ic, string tc, string iu, 
 adres_biuro(iu), telefon_biuro(tu), telefon_kom(tcel), notatki(no)
 {
 }
-void Kontakt::input()
+void Kontakt::input()										// wprowadzenie danych do kontaktu
 {
 	cout << ogranicznik;
 	cout << "| --- DODAWANIE KONTAKTU --- \n";
@@ -45,7 +45,7 @@ void Kontakt::WyswietlKontakt(int n_id) const
 	cout << "| KOMORKOWY: " << telefon_kom << "\n";
 	cout << "| NOTATKI: " << notatki << "\n";
 }
-string Kontakt::stworzWierszCSV() const
+string Kontakt::stworzWierszCSV() const  //dodanie nowej linii do pliku
 {
 	string temp = imie + ";" + nazwisko + ";" + mail + ";" + adres_dom + ";" + telefon_dom + ";" + adres_biuro + ";" + telefon_biuro + ";" + telefon_kom + ";" + notatki;
 	return temp;

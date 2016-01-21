@@ -8,11 +8,11 @@ int dzien_wydarzenie::nrWydarzenia() const
 {
 	return lista_wydarzen.size();
 }
-void dzien_wydarzenie::dodajWydarzenie(Wydarzenie * nowe_wydarzenie)
+void dzien_wydarzenie::dodajWydarzenie(Wydarzenie * nowe_wydarzenie) //wprowadzenie wydarzenia do listy wydarzen
 {
 	lista_wydarzen.push_back((Wydarzenie *)nowe_wydarzenie);
 }
-void dzien_wydarzenie::wprowadz_wydarzenie()
+void dzien_wydarzenie::wprowadz_wydarzenie() //okreslenie typu wydarzenia
 {
 	int typ_ev;
 	typ_ev = int_input("| Wpisz typ wydarzenia: [1=Spotkanie, 2=Termin, 3=Notatki ]: ", 1, 3);
@@ -48,7 +48,7 @@ void dzien_wydarzenie::wypiszWydarzenie()
 	}
 	cout << "|\n";
 }
-string dzien_wydarzenie::zapiszWydarzenieWDniu(terminy data)
+string dzien_wydarzenie::zapiszWydarzenieWDniu(terminy data)  //zapis wydarzenia do pliku
 {
 	string temp("");
 	list < Wydarzenie * >::iterator it;
@@ -56,7 +56,7 @@ string dzien_wydarzenie::zapiszWydarzenieWDniu(terminy data)
 		temp += ((*it)->to_csv(data)) + "\n";
 	return temp;
 }
-void dzien_wydarzenie::wypiszTerminy(string tytu³)
+void dzien_wydarzenie::wypiszTerminy(string tytu³)  //wyswietlenie wydarzen w biezacym dniu
 {
 	int i = 1;
 	list < Wydarzenie * >::iterator it;

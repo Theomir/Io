@@ -19,7 +19,7 @@ int main()
 	data2.dataBiezaca(); data2++;
 	r_glowna.czytajPlik(ksiazka_plik);
 	a_glowna.czytajPlik(kalendarz_plik);
-	do
+	do												// menu glowne 
 	{
 		pokaz_menu(a_glowna.wypiszTerminy(data1), a_glowna.wypiszTerminy(data2));
 		n_op = int_input(" Co zrobic: ", 1, 14);
