@@ -6,7 +6,7 @@
 #include <cstdlib>
 void czyszczenie_ekranu()
 {
-	system("cls");
+	system("cls");//komenda systemowa
 }
 void pauza()
 {

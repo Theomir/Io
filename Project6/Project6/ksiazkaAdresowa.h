@@ -6,12 +6,12 @@ class ksiazka_adresowa
 {
 	list<Kontakt> lista_kontaktow;
 public:
-	ksiazka_adresowa() {}
-	~ksiazka_adresowa() { lista_kontaktow.clear(); }
-	void czytajPlik(string nazwapliku);
-	bool zapiszPlik(string nazwapliku);
-	void dodaj_kontakt();
-	void usun_kontakt();
-	void wypisz_adres();
+	ksiazka_adresowa() {   }//twoerzenie nowej ksiazki adresowej
+	~ksiazka_adresowa() { lista_kontaktow.clear(); } // usuwanie ksiazki adrsowej
+	void czytajPlik(string nazwapliku);//otwieranie pliku csv
+	bool zapiszPlik(string nazwapliku);//zapisywanie do pliku csv
+	void dodaj_kontakt();//dodawanie kontaktow
+	void usun_kontakt();//usuwanie kontaktow
+	void wypisz_adres();//wypisywanie adresu
 } ;
 #endif
