@@ -35,8 +35,8 @@ string Spotkanie::to_csv(terminy data) const
 void Spotkanie::input()
 {
 	Wydarzenie::input();
-	wprowadzanie_i_kontrola("| [1/4] nazwa: ", nazwa);
-	wprowadzanie_i_kontrola("| [2/4] miejsce:", miejsce);
+	wprowadzanie_i_kontrola("| [1/4] Nazwa: ", nazwa);
+	wprowadzanie_i_kontrola("| [2/4] Miejsce:", miejsce);
 	wprowadzanie_i_kontrola("| [3/4] Z kim: ", nazwisko_osoby);
 	wprowadzanie_i_kontrola("| [4/4] Notatka:", notatki);
 	cout << "|\t[zakonczono]\n";

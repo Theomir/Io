@@ -43,7 +43,7 @@ void Kontakt::WyswietlKontakt(int n_id) const
 	cout << "| DOM: " << adres_dom << " - Tel. " << telefon_dom << ".\n";
 	cout << "| PRACA: " << adres_dom << " - Tel. " << telefon_dom << ".\n";
 	cout << "| KOMORKOWY: " << telefon_kom << "\n";
-	cout << "| notatki: " << notatki << "\n";
+	cout << "| NOTATKI: " << notatki << "\n";
 }
 string Kontakt::stworzWierszCSV() const
 {
