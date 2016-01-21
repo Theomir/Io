@@ -67,7 +67,7 @@ void Kalendarz::czytajPlik(string nazwapliku)
 						kalendarz_wydarzen[data_wydarzenia].dodajWydarzenie(e);
 					}
 					else
-						blad_wydruku("Typ wydarzenie niepoprawny '" + nazwapliku + "', linia " + int_to_string(numer_linii) + " !");
+						blad_wydruku("Typ wydarzenia niepoprawny '" + nazwapliku + "', linia " + int_to_string(numer_linii) + " !");
 				}
 				else
 					blad_wydruku("Data niepoprawna '" + nazwapliku + "', linia " + int_to_string(numer_linii) + " ! ");
@@ -86,7 +86,7 @@ bool Kalendarz::zapiszPlik(string nazwapliku)
 
 	if (PlikKalendarza.fail())
 	{
-		blad_wydruku("Blad orwieranie pliku kalendarza'" + nazwapliku + "'!");
+		blad_wydruku("Blad otwierania pliku kalendarza'" + nazwapliku + "'!");
 		return false;
 	}
 	map < terminy, dzien_wydarzenie >::iterator it;
@@ -128,7 +128,7 @@ void Kalendarz::usun_wygasniete()
 			n_usuniety += (*it).second.usun_wszystkie_wydarzenia();
 	}
 	if (n_usuniety > 0)
-		cout << "| " << n_usuniety << " Wydarzenie poprawnie usuniete\n";
+		cout << "| " << n_usuniety << " Wydarzenie poprawnie usuniete.\n";
 	else
 		cout << "| brak wydarzen do usuniecia !\n";
 	pauza();

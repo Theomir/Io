@@ -99,10 +99,12 @@ void pokaz_menu(int wydarzenia_dzis, int wydarzenia_jutro)
 	cout << "| 6 - Wydarzenia od ... do...\n";
 	cout << "| 7 - Wydarzenia w najblizszych tygodniach ...\n";
 	cout << "|\n";
+	cout << "|\n";
 	cout << "| ---- Ksiazka adresowa ----\n";
 	cout << "| 8 - Wyswietl ksiazke adresowa\n";
 	cout << "| 9 - Dodaj nowy kontakt\n";
 	cout << "| 10 - Usun kontakt ...\n";
+	cout << "|\n";
 	cout << "|\n";
 	cout << "| 11 - Usun wydarzenie ...\n";
 	cout << "| 12 - Usun wygasniete wydarzenia\n";
