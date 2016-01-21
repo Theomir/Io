@@ -13,5 +13,5 @@ public:
 	void dodaj_kontakt();
 	void usun_kontakt();
 	void wypisz_adres();
-};
+} ;
 #endif
