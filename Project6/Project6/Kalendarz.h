@@ -19,15 +19,15 @@ public:
 	{
 		kalendarz_wydarzen.clear();
 	}
-	void czytajPlik(string nazwapliku);
-	bool zapiszPlik(string nazwapliku);
-	void dodaj_wydarzenie();
-	void dodaj_wydarzenie(terminy nowy);
-	void usun_wydarzenie();
-	void usun_wygasniete();
-	void wyswietl_wydarzenia_dnia();
-	void wyswietl_wydarzenia_dnia(terminy data, bool nowy_ekran = true);
-	void wypiszTerminy();
+	void czytajPlik(string nazwapliku); //otwieranie pliku
+	bool zapiszPlik(string nazwapliku); //zpaisywanie pliku
+	void dodaj_wydarzenie(); //dodawanie wydarzen
+	void dodaj_wydarzenie(terminy nowy); //dodawanie wydarzen z elementem
+	void usun_wydarzenie(); //usuwanie wydarzenia
+	void usun_wygasniete(); //usuwanie wygasnietych wydarzen
+	void wyswietl_wydarzenia_dnia(); //wyswietlanie wydarzenia na dzis
+	void wyswietl_wydarzenia_dnia(terminy data, bool nowy_ekran = true); //wyswietlanie wydarzen dla konkretnej daty
+	void wypiszTerminy(); //wypisywanie terminow
 	int wypiszTerminy(terminy d);
 };
 #endif
