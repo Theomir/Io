@@ -9,7 +9,7 @@ void Kalendarz::czytajPlik(string nazwapliku)
 	PlikKalendarza.open(nazwapliku.c_str(), ios::in);
 	if (PlikKalendarza.fail())
 	{
-		blad_wydruku("Kalendarz" + nazwapliku + " nie istnieje, zostanie utworzony od zera");
+		blad_wydruku("Plik kalendarza: " + nazwapliku + " nie istnieje, zostanie utworzony od zera");
 		return;
 	}
 	while (!PlikKalendarza.eof())

@@ -10,7 +10,7 @@ void ksiazka_adresowa::czytajPlik(string nazwapliku)  //wczytywanie ksiazki z pl
 	ksiazka_adresowa_plik.open(nazwapliku.c_str(), ios::in | ios::out);
 	if (ksiazka_adresowa_plik.fail())
 	{
-		blad_wydruku("ksiazka adresowa'" + nazwapliku + "' nie istnieje, zostanie utworzona od zera");
+		blad_wydruku("Plik ksiazki adresowej: '" + nazwapliku + "' nie istnieje, zostanie utworzona od zera");
 		return;
 	}
 	while (!ksiazka_adresowa_plik.eof())
