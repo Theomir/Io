@@ -1,17 +1,23 @@
 #include "WydarzeniawDniu.h"
 #include <typeinfo>
+/// \details dzien_wydarzenie
+
 dzien_wydarzenie::~dzien_wydarzenie()
 {
 	usun_wszystkie_wydarzenia();
 }
+/// \details lista wydarzen
+/// \return lista
 int dzien_wydarzenie::nrWydarzenia() const
 {
 	return lista_wydarzen.size();
 }
+/// \details wprowadzenie wydarzenia do listy wydarzen
 void dzien_wydarzenie::dodajWydarzenie(Wydarzenie * nowe_wydarzenie) //wprowadzenie wydarzenia do listy wydarzen
 {
 	lista_wydarzen.push_back((Wydarzenie *)nowe_wydarzenie);
 }
+/// \details okreslenie typu wydarzenia
 void dzien_wydarzenie::wprowadz_wydarzenie() //okreslenie typu wydarzenia
 {
 	int typ_ev;
@@ -35,6 +41,7 @@ void dzien_wydarzenie::wprowadz_wydarzenie() //okreslenie typu wydarzenia
 		dodajWydarzenie(nowe_wydarzenie);
 	}
 }
+/// \details wpisanie wydarzen
 void dzien_wydarzenie::wypiszWydarzenie()
 {
 	int i = 1;
@@ -48,6 +55,7 @@ void dzien_wydarzenie::wypiszWydarzenie()
 	}
 	cout << "|\n";
 }
+/// \details zapisanie wydarzenia
 string dzien_wydarzenie::zapiszWydarzenieWDniu(terminy data)  //zapis wydarzenia do pliku
 {
 	string temp("");
@@ -56,6 +64,7 @@ string dzien_wydarzenie::zapiszWydarzenieWDniu(terminy data)  //zapis wydarzenia
 		temp += ((*it)->to_csv(data)) + "\n";
 	return temp;
 }
+/// \details wyswietlenie wydarzen w biezacym dniu
 void dzien_wydarzenie::wypiszTerminy(string tytu³)  //wyswietlenie wydarzen w biezacym dniu
 {
 	int i = 1;
@@ -69,7 +78,7 @@ void dzien_wydarzenie::wypiszTerminy(string tytu³)  //wyswietlenie wydarzen w bi
 		}
 	}
 }
-
+/// \details usuwanie wydarzen 
 void dzien_wydarzenie::usun_wydarzenie_z_listy()
 {
 	int numer, i;
@@ -83,6 +92,7 @@ void dzien_wydarzenie::usun_wydarzenie_z_listy()
 			break;
 		}
 }
+/// \details usuwanie wszystkich wydarzen
 int dzien_wydarzenie::usun_wszystkie_wydarzenia()
 {
 	int n_ev = lista_wydarzen.size();
